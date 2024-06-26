@@ -33,9 +33,13 @@ body{
     height: 70px;
     display: flex;
     justify-content:space-between;
+    padding: 10px 0;
+    margin-top: 5rem;
 }
 
 .music-logo{
+    width: fit-content;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,4 +63,123 @@ body{
 .music-text p{
     font-size: 6px;
     letter-spacing: 5px;
+}
+
+.search-bar{
+    background: #EBEBEB;
+    width: 374px;
+    height: 46px;
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid #C1C1C1;
+}
+
+#search-text-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 0 18px;
+    background-color: #EBEBEB;
+}
+
+#search-icon{
+    width: fit-content;
+    padding-right: 18px;
+    width: 50px;
+}
+
+/************** CSS for music list  **************/
+.music-list-container{
+    /* background: grey; */
+    width: 100%;
+    height: 28rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-left: 60px;
+}
+
+.music-card{
+    /* border: 1px solid; */
+    width: 140px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+
+.box{
+    width: 140px;
+    height: 140px;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 34px;
+    transition: .2s;
+    position: relative;
+}
+
+.favorites-mini-grey-icon{
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    left: 25px;;
+}
+
+.favorites-mini-icon{
+    width: 20px;
+    position: absolute;
+    z-index: 5;
+    top: 25px;
+    left: 25px;
+}
+
+#box-icon{
+    margin-top: 10px;
+    width: 65px;
+}
+
+.music-card:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.song-title{
+    width: 140px;
+}
+
+.song-title h5{
+    font-size: 13px;
+}
+.song-title h6{
+    color: #8B8B8B;
+    margin-top: 3px;
+}
+
+.arrows{
+    float: right;
+    margin-right: 50px;
+    
+}
+
+.leftarrow, .rightarrow{
+    margin-left: 20px;
+}
+
+
+/* HOver effects for boxes */
+.box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 100px -20px, rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+    background-color: #f0f0f0;
 }
