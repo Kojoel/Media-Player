@@ -82,11 +82,3 @@ body{
     } 
 }
 
-@keyframes upshift{
-    from{
-        transform: translateY(-50%);
-    }
-    to{
-        transform: translateY(0%);
-    }
-}
