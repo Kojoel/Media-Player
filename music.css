@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: center;
     justify-content: center;
+    position: relative;
 }
 
 .music-top{
@@ -107,12 +108,14 @@ body{
 .music-card{
     /* border: 1px solid; */
     width: 140px;
+    height: fit-content;
     /* padding: 10px; */
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
     transition: .3s;
+    /* background: blue; */
 }
 
 
@@ -131,7 +134,7 @@ body{
 .favorites-mini-grey-icon{
     width: 20px;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: 25px;
     left: 25px;;
 }

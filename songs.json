@@ -1,0 +1,29 @@
+{
+    "songs": [
+
+        {
+          "songID": "1",
+          "songPath": "music-samples/Black-Sherif-Kilos-Milos.mp3",
+          "songTitle": "Kilos Milos",
+          "songArtist": "Black Sherif"
+        },
+        {
+          "songID": "2",
+          "songPath": "music-samples/Chiké-&-Mohbad-Egwu.mp3",
+          "songTitle": "Egwu",
+          "songArtist": "Chiké & Mohbad"
+        },
+        {
+          "songID": "3",
+          "songPath": "music-samples/JP-Cooper-Holy-Water.mp3",
+          "songTitle": "Holy Water",
+          "songArtist": "JP Cooper"
+        },
+        {
+          "songID": "4",
+          "songPath": "music-samples/Team-Eternity-Ghana-Defe-Defe-led-by-Naana Asiedu.mp3",
+          "songTitle": "Defe Defe",
+          "songArtist": "T.ENaana Asiedu"
+        }
+    ]
+}   

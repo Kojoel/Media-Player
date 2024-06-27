@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="intro.css">
     <link rel="stylesheet" href="option.css">
     <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="player.css">
 
-    <!-- <script defer src="music.js"></script> -->
-    <script defer src="music2.js"></script>
+    <script defer src="music.js"></script>
     <link href=" https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css " rel="stylesheet">
 </head>
 <body>
@@ -55,8 +55,8 @@
                 <div class="music-logo">
                     <img id="music-soundwaveIcon" src="icons/soundwave icon.png" alt="soundwave icon">
                     <div class="music-text">
-                        <h4 class="montserrat">SOUNDWAVE</h4>
-                        <P class="montserrat">MEDIA PLAYER</P>
+                        <h4 id="song-name" class="montserrat">SOUNDWAVE</h4>
+                        <P id="artist-name" class="montserrat">MEDIA PLAYER</P>
                     </div>
                 </div>
                 <div class="search-bar">
@@ -66,105 +66,22 @@
             </div>
 
             <div class="music-list-container">
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
+                <!-- <template>
+                    <div class="music-card">
+                        <div class="box">
+                            <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
+                            <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
+                            <img id="box-icon" src="icons/music icon.png" alt="music icon">
+                        </div>
+                        <div class="song-title">
+                            <h5 id="song-name" class="montserrat">SONG: Oceans Apart</h6>
+                            <h6 id="artist-name"class="montserrat">ARTIST: West Life</h6>
+                        </div>
+                        <audio controls>
+                            <source src="" type="audio/mp3">
+                        </audio>
                     </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
-                <div class="music-card">
-                    <div class="box">
-                        <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                        <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                        <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                    </div>
-                    <div class="song-title">
-                        <h5 class="montserrat">SONG: Oceans Apart</h6>
-                        <h6 class="montserrat">ARTIST: West Life</h6>
-                    </div>
-                </div>
+                </template> -->
                 
             </div>
             <div class="arrows">
@@ -173,6 +90,39 @@
             </div>
         </div>
     </div>
+
+    <div class="player-wrapper">
+        <div class="player-box">
+            <div class="top-box">
+                <div class="song-cover">
+                    <img src="icons/music icon.png" alt="music icon">
+                </div>
+                <img id="volume-icon"src="icons/volume icon.png" alt="volume icon">
+            </div>
+            <div class="bottom-box">
+                <div class="song-time">
+                    <div class="time">
+                        <p id="current-time">1:44</p>
+                        <p id="total-time">4:21</p>
+                    </div>
+                    <input id="progress" value="0" type="range">
+                    <p id="song-title">JP Cooper (Bits and Pieces)</p>
+                </div>
+                <div class="player-controls">
+                    <div class="left-circle">
+                        <img id="prev-btn" src="icons/play-prev icon.png" alt="pevious button">
+                    </div>
+                    <div class="middle-circle">
+                        <img id="play-btn" src="icons/play-white icon.png" alt="play button">
+                    </div>
+                    <div class="right-circle">
+                        <img id="next-btn" src="icons/play-next icon.png" alt="next button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="player-dark-bg"></div>
 
 
 </body>
