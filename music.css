@@ -1,6 +1,7 @@
 /* Montserrat font imported from google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -172,7 +173,6 @@ body{
 .arrows{
     float: right;
     margin-right: 50px;
-    
 }
 
 .leftarrow, .rightarrow{
@@ -186,3 +186,4 @@ body{
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
     background-color: #f0f0f0;
 }
+
