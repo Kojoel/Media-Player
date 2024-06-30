@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="player.css">
 
     <script defer src="music.js"></script>
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
@@ -60,37 +61,44 @@
                     </div>
                 </div>
                 <div class="search-bar">
-                    <input type="search" id="search-text-container" placeholder="Search music or Artiste">
-                    <img id="search-icon" src="icons/search icon.png" alt="search icon">
+                    <input type="search" id="search-text-container" placeholder="Search song" data-search>
+                    <!-- <img id="search-icon" src="icons/search icon.png" alt="search icon"> -->
                 </div>
             </div>
 
-            <div class="music-list-container">
-                <!-- <template>
-                    <div class="music-card">
-                        
-                        <div class="box">
-                            <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
-                            <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
-                            <img id="box-icon" src="icons/music icon.png" alt="music icon">
-                        </div>
-                        <div class="song-title">
-                            <h5 id="song-name" class="montserrat">SONG: Oceans Apart</h6>
-                            <h6 id="artist-name"class="montserrat">ARTIST: West Life</h6>
-                        </div>
-                        <audio controls>
-                            <source src="" type="audio/mp3">
-                        </audio>
-                        
+            <div class="music-arrow-container">
+                <div class="music-list-container">
+                    <div class="favSort">
+                        <img src="icons/favorite-grey icon.png" alt="" class="favPlayListInactive">
+                        <img src="icons/favorites icon.png" alt="" class="favPlayListActive">
                     </div>
-                    </template> -->
-            </div>
-            <div class="arrows">
-                <!-- <img src="icons/left arrow.png" alt="" class="leftarrow">
-                <img src="icons/right arrow.png" alt="" class="rightarrow"> -->
+                    <!-- <template>
+                        <div class="music-card">
+                
+                            <div class="box">
+                                <img class="favorites-mini-grey-icon" src="icons/favorite-grey icon.png" alt="favorites icon">
+                                <img class="favorites-mini-icon" src="icons/favorites icon.png" alt="favorites icon">
+                                <img id="box-icon" src="icons/music icon.png" alt="music icon">
+                            </div>
+                            <div class="song-title">
+                                <h5 id="song-name" class="montserrat">SONG: Oceans Apart</h6>
+                                <h6 id="artist-name"class="montserrat">ARTIST: West Life</h6>
+                            </div>
+                            <audio controls>
+                                <source src="" type="audio/mp3">
+                            </audio>
+                
+                        </div>
+                        </template> -->
+                </div>
+                <!-- <div class="arrows">
+                    <img id="up-arrow" src="icons/left arrow.png" alt="" class="uparrow">
+                    <img id="down-arrow" src="icons/right arrow.png" alt="" class="downarrow">
+                </div> -->
             </div>
         </div>
     </div>
+
 
     <div class="player-wrapper">
         <div class="player-box">

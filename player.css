@@ -79,9 +79,18 @@ body{
     width: 40%;
 }
 #volume-icon{
+    width: 20px;
     position: absolute;
     bottom: 20px;
     right: 50px;
+    transition: .2s;
+}
+#volume-icon:hover{
+    width: 25px;
+    right: 45px;
+}
+#volume-icon:active{
+    scale: .8;
 }
 
 .bottom-box{
