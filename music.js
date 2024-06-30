@@ -266,6 +266,8 @@ cards.forEach(card => {
         console.log("favorited");
         favGrey.style.dislay = "none";
         fav.style.display = "flex";
+        card.setAttribute("favorited", '');
+        // console.log(card);
     });
 
     fav.addEventListener('click', (event) => {
@@ -275,6 +277,45 @@ cards.forEach(card => {
         console.log("unfavorited");
         fav.style.display = "none";
         favGrey.style.display = "flex";
+        card.removeAttribute("favorited", '');
+        // console.log(card);
     })
 })
+
+
+const favSort = musicListContainer.querySelector(".favSort");
+console.log(favSort);
+
+const favInactive = favSort.querySelector('.favPlayListInactive');
+// console.log(favInactive);
+
+const favActive = favSort.querySelector('.favPlayListActive');
+// console.log(favActive);
+
+
+// Event listener for clicking the inactive favorite icon
+favInactive.addEventListener('click', (event) => {
+    event.stopPropagation();
+    favInactive.style.display = "none";
+    favActive.style.display = "flex";
+
+    const cards = musicListContainer.querySelectorAll('.music-card');
+    cards.forEach(card => {
+        const checkFav = card.querySelector(".favorites-mini-icon");
+        const isFavorited = card.hasAttribute('favorited');
+        card.classList.toggle("hide", !isFavorited); // Hide the card if not favorited
+    });
+});
+
+// Event listener for clicking the active favorite icon
+favActive.addEventListener('click', (event) => {
+    event.stopPropagation();
+    favActive.style.display = "none";
+    favInactive.style.display = "flex";
+
+    const cards = musicListContainer.querySelectorAll('.music-card');
+    cards.forEach(card => {
+        card.classList.remove("hide"); // Show all cards
+    });
+});
 

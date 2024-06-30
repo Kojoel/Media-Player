@@ -135,6 +135,10 @@ body{
     display: none;
 }
 
+.show{
+    display: flex;
+}
+
 .box{
     width: 140px;
     height: 140px;
@@ -240,7 +244,20 @@ body{
     transition: .2s;
 }
 
-/* #up-arrow, #down-arrow{
+
+
+/* HOver effects for boxes */
+.box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 100px -20px, rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
+    background-color: #f0f0f0;
+}
+
+#up-arrow:active, #down-arrow:active{
+    scale: .9;
+} 
+
+/*
+#up-arrow, #down-arrow{
     transform: rotate(90deg);
     transition: .2s;
 }
@@ -249,19 +266,5 @@ body{
     scale: 1.1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 100px -20px, rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
-    /* background-color: #f0f0f0; */
-/* } */
-
-#up-arrow:active, #down-arrow:active{
-    scale: .9;
+    /* background-color: #f0f0f0;
 } */
-
-
-/* HOver effects for boxes */
-.box:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 100px -20px, rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
-    background-color: #f0f0f0;
-}
-
-
