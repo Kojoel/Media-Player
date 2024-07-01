@@ -27,14 +27,19 @@ body{
     justify-content: center;
     align-items: center;
     /* Animation for intro wrapper */
-    animation: introWrapper 6s infinite;
+    position: absolute;
+    z-index: 20;
+    background: white;
 }
 
 .intro{
+    width: 270px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    animation: introWrapper 6s infinite;
 }
 
 #soundwaveIcon{
