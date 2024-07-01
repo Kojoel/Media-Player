@@ -25,6 +25,8 @@ body{
 .video-wrapper{
     width: 1200px;
     height: 100%;
+    display: none;
+    flex-direction: column;
 }
 
 .video-top{
@@ -55,4 +57,75 @@ body{
 .video-text p{
     font-size: 10px;
     letter-spacing: 5px;
+    
+}
+
+.video-container{
+    border: 1px solid purple;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#myVideo {
+    border-radius: 8px;
+    /* width="640" height="360" */
+    width: 840px;
+    height: 470px;
+}
+
+.videoList{
+    background: rgb(228, 228, 228);
+    width: 330px;
+    height: 470px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    position: relative;
+}
+.videoList h3{
+    background: rgb(228, 228, 228);
+    /* background: blue; */
+    position: fixed;
+    z-index: 5;
+    height: 50px;
+    top: 10rem;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.videoList h3:hover{
+    border-bottom: 1px solid purple;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.list p{
+    display: block;
+    background: lightgrey;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: .2s;
+    color: rgb(61, 61, 61);
+}
+
+.list p:hover{
+    background: whitesmoke;
+    scale: 1.05;
+    color: black;
+    cursor: pointer;
 }
