@@ -6,7 +6,7 @@ const video = document.querySelector('#myVideo');
 // console.log(videos);
 
 const videoUrls = [
-    "video-samples/Life is fragile _ Reduce speed _ motivational video 👍.mp4"
+    "Life is fragile reduce speed.mp4"
 ]
 
 const videoTitles = [

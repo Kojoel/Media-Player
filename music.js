@@ -230,12 +230,15 @@ function playSong(index) {
     })
 }
 
-Array.from(musicListContainer.children).forEach((item, index) => {
-    item.addEventListener('click', () => {
-        console.log(item.innerHTML);
-        // audio.play();
-    });
-});
+// Array.from(musicListContainer.children).forEach((item, index) => {
+//     item.addEventListener('click', () => {
+        
+//         // audio.play();
+//     });
+// });
+
+const audioSrc = document.querySelectorAll('.musicListContainer .music-card');
+// console.log(audioSrc);
 
 prevBtn.addEventListener('click', () => {
     if (currentSongIndex > 0) {
