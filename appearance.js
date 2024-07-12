@@ -142,4 +142,4 @@ darkmodebutton.addEventListener('click', () => {
 
 function changeRootVariable(variable, value) {
     document.documentElement.style.setProperty(variable, value);
-  }
+}

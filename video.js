@@ -35,4 +35,15 @@ getVideos.forEach((titleElement, index) => {
         video.load(); 
         video.play();  
     });
+
+    const gobackvideo = document.querySelector('.go-back-video');
+    gobackvideo.addEventListener('click', () => {
+    video.pause();
+    })
+
+    const gotomusicplayer = document.querySelector('.go-to-music-player');
+    gotomusicplayer.addEventListener('click', () => {
+    video.pause();
+    })
 });
+
