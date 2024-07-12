@@ -53,11 +53,15 @@ optionV.addEventListener('click', (e) => {
 const gobackmusic = document.querySelector('.go-back-music');
 gobackmusic.addEventListener('click', () => {
     optionWrapper.style.display = "flex";
+    videoWrapper.style.display ="none";
+    musicWrapper.style.display = "none";
 })
 
 const gobackvideo = document.querySelector('.go-back-video');
 gobackvideo.addEventListener('click', () => {
     optionWrapper.style.display = "flex";
+    videoWrapper.style.display = "none";
+    musicWrapper.style.display = "none";
 })
 
 const gotovideoplayer = document.querySelector('.go-to-video-player');
