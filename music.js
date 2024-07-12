@@ -22,6 +22,8 @@ let currentAudio = null;
 let progressInterval = null;
 let currentSongIndex = null;
 
+const audio = document.createElement('audio');
+
 const songPaths = [
     "music-samples/Black-Sherif-Kilos-Milos.mp3",
     "music-samples/Chiké-&-Mohbad-Egwu.mp3",
@@ -124,13 +126,17 @@ function generateMusicCards() {
         artistName.className = 'montserrat';
         artistName.textContent = `ARTIST: ${artistNames[index]}`;
 
-        const audio = document.createElement('audio');
-        audio.controls = true;
-        audio.id = 'Audio';
-        audio.style.display = 'none';
+        // const audio = document.createElement('audio');
+        // audio.controls = true;
+        // audio.id = 'Audio';
+        // audio.style.display = 'none';
+        const audioSrcName = document.createElement('p');
+        audioSrcName.textContent = songPaths[index];
+        audioSrcName.id = "audio-src-name";
 
         const source = document.createElement('source');
         source.src = songPaths[index];
+        console.log(source.src)
 
         audio.appendChild(source);
         songInfo.appendChild(songName);
@@ -140,7 +146,8 @@ function generateMusicCards() {
         box.appendChild(fav);
         card.appendChild(box);
         card.appendChild(songInfo);
-        card.appendChild(audio);
+        // card.appendChild(audio);
+        card.appendChild(audioSrcName);
 
         musicListContainer.appendChild(card);
     });
@@ -225,7 +232,8 @@ function playSong(index) {
 
 Array.from(musicListContainer.children).forEach((item, index) => {
     item.addEventListener('click', () => {
-        playSong(index);
+        console.log(item.innerHTML);
+        // audio.play();
     });
 });
 

@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
         optionWrapper.style.display = "flex";
         musicWrapper.style.display = "none";
         darkmode.style.opacity ="1";
-    }, 4000);
+    }, 0000);
 });
 
 
