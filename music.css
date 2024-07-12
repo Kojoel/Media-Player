@@ -1,6 +1,13 @@
 /* Montserrat font imported from google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --white-bg: #fffff;
+    --light-grey: #ebebeb;
+    --light-grey-hover: #f0f0f0;
+    --black-text: #000000;
+    --song-title-grey: #8B8B8B;
+}
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -28,6 +35,7 @@ body{
     flex-direction: center;
     justify-content: center;
     position: relative;
+    background: var(--white-bg);
 }
 
 .music-top{
@@ -37,6 +45,7 @@ body{
     justify-content:space-between;
     padding: 10px 0;
     margin-top: 5rem;
+    position: relative;
 }
 
 .music-logo{
@@ -67,15 +76,42 @@ body{
     letter-spacing: 5px;
 }
 
+.go-back-music{
+    width: 3rem;
+    position: absolute;
+    top: 5rem;
+    transition: .2s;
+}
+.go-back-music:hover{
+    opacity: .8;
+}
+.go-back-music:active{
+    scale: .9;
+}
+
+.go-to-video-player{
+    position: absolute;
+    top: 5.3rem;
+    right: 0;
+    width: 2.5rem;
+    transition: .2s;
+}
+.go-to-video-player:hover{
+    opacity: .8;
+}
+.go-to-video-player:active{
+    scale: .9;
+}
+
 .search-bar{
-    background: #EBEBEB;
+    background: var(--light-grey);
     width: 374px;
     height: 46px;
     display :flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    border: 1px solid #C1C1C1;
+    border: 1px solid var(--light-grey);
 }
 
 #search-text-container{
@@ -84,7 +120,7 @@ body{
     border-radius: 20px;
     border: none;
     padding: 0 18px;
-    background-color: #EBEBEB;
+    background-color: var(--light-grey);
 }
 
 #search-icon{
@@ -142,7 +178,7 @@ body{
 .box{
     width: 140px;
     height: 140px;
-    background-color: #EBEBEB;
+    background-color: var(--light-grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +222,7 @@ body{
     justify-content: center;
     position: absolute;
     left: 0;
-    background-color: #EBEBEB;
+    background-color: var(--light-grey);
     border-radius: 50%;
 }
 
@@ -230,7 +266,7 @@ body{
     font-size: 13px;
 }
 .song-title h6{
-    color: #8B8B8B;
+    color: var(--song-title-grey);
     margin-top: 3px;
 }
 
@@ -249,7 +285,7 @@ body{
 /* HOver effects for boxes */
 .box:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 100px -20px, rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
-    background-color: #f0f0f0;
+    background-color: var(--light-grey-hover);
 }
 
 #up-arrow:active, #down-arrow:active{

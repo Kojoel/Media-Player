@@ -2,6 +2,8 @@ const musicListContainer = document.querySelector('.music-list-container');
 const playerWrapper = document.querySelector('.player-wrapper');
 const playerBg = document.querySelector('.player-dark-bg');
 
+const volumeProgress = document.querySelector('.volume-progress');
+const volumeIcon = document.querySelector('#volume-icon');
 const progressBar = document.querySelector('#progress');
 const TimeCurrently = document.querySelector('#current-time');
 const TotalTime = document.querySelector('#total-time');
@@ -208,6 +210,17 @@ function playSong(index) {
         playerWrapper.style.display = "none";
         playerBg.style.display = "none";
     });
+
+    volumeProgress.addEventListener('input', () => {
+        actualVolume = volumeProgress.value/100;
+        itemAudio.volume = actualVolume;
+        // console.log(actualVolume);
+        // console.log(itemAudio.volume);
+    })
+
+    volumeIcon.addEventListener('click', () => {
+        volumeProgress.classList.toggle('active');
+    })
 }
 
 Array.from(musicListContainer.children).forEach((item, index) => {
@@ -224,7 +237,10 @@ prevBtn.addEventListener('click', () => {
 
 nextBtn.addEventListener('click', () => {
     if (currentSongIndex < songPaths.length - 1) {
-        playSong(currentSongIndex + 1);
+        currentSongIndex = currentSongIndex + 1;
+        playSong(currentSongIndex);
+        // console.log(currentSongIndex);
+        console.log(currentAudio.src);
     }
 });
 

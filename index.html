@@ -29,6 +29,12 @@
         </div>
     </div>
 
+    <!-- Option Page for music or video player -->
+        <div class="darkmode">
+            <div class="darkmodebar"></div>
+            <div class="darkmodebutton"></div>
+        </div>
+        <!-- <div class="lightmodebutton"></div> -->
     <div class="option-wrapper">
         <div class="option-logo">
             <img id="option-soundwaveIcon" src="icons/soundwave icon.png" alt="soundwave icon">
@@ -53,6 +59,7 @@
         </div>
     </div>
 
+    <!-- Music section of webpage -->
     <div class="music-wrapper">
         <div class="music-box">
             <div class="music-top">
@@ -63,6 +70,8 @@
                         <P id="artist-name" class="montserrat">MEDIA PLAYER</P>
                     </div>
                 </div>
+                <img class="go-back-music" src="./icons/Home Icon.png" alt="back">
+                <img class="go-to-video-player" src="./icons/video icon.png" alt="go to video player">
                 <div class="search-bar">
                     <input type="search" id="search-text-container" placeholder="Search song" data-search>
                     <!-- <img id="search-icon" src="icons/search icon.png" alt="search icon"> -->
@@ -102,13 +111,14 @@
         </div>
     </div>
 
-
+    <!-- Music Player pop up section of webpage -->
     <div class="player-wrapper">
         <div class="player-box">
             <div class="top-box">
                 <div class="song-cover">
                     <img src="icons/music icon.png" alt="music icon">
                 </div>
+                <input type="range" class="volume-progress" min="0" max="100" value="50">
                 <img id="volume-icon"src="icons/volume icon.png" alt="volume icon">
             </div>
             <div class="bottom-box">
@@ -138,7 +148,7 @@
     </div>
     <div class="player-dark-bg"></div>
 
-
+    <!-- Video section of webpage -->
     <div class="video-wrapper">
 
         <div class="video-top">
@@ -149,6 +159,8 @@
                     <P class="montserrat">VIDEO PLAYER</P>
                 </div>
             </div>
+            <img class="go-back-video" src="./icons/Home Icon.png" alt="back">
+            <img class="go-to-music-player" src="./icons/music icon.png" alt="music icon">
             <div class="search-bar">
                 <input type="search" id="search-text-container" placeholder="Search video" data-search>
                 <!-- <img id="search-icon" src="icons/search icon.png" alt="search icon"> -->

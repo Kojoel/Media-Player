@@ -1,6 +1,13 @@
 /* Montserrat font imported from google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --white-bg: #fffff;
+    --light-grey: #ebebeb;
+    --light-grey-hover: #f0f0f0;
+    --black-text: #000000;
+    --song-title-grey: #8B8B8B;
+}
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -19,6 +26,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    background: var(--white-bg);
 }
 
 
@@ -27,6 +35,7 @@ body{
     height: 100%;
     display: none;
     flex-direction: column;
+    background: var(--white-bg);
 }
 
 .video-top{
@@ -34,6 +43,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 9rem;
+    position: relative;
 }
 
 .video-logo{
@@ -60,6 +70,35 @@ body{
     
 }
 
+.go-back-video{
+    width: 3rem;
+    position: absolute;
+    top: 7.5rem;
+    transition: .2s;
+    cursor: pointer;
+}
+.go-back-video:hover{
+    opacity: .8;
+}
+.go-back-video:active{
+    scale: .9;
+}
+
+.go-to-music-player{
+    width: 2.5rem;
+    position: absolute;
+    top: 7.5rem;
+    right: 0;
+    transition: .2s;
+    cursor: pointer;
+}
+.go-to-music-player:hover{
+    opacity: .8;
+}
+.go-to-music-player:active{
+    scale: .9;
+}
+
 .video-container{
     border: 1px solid purple;
     height: fit-content;
@@ -69,6 +108,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+    margin-top: 2rem;
 }
 
 #myVideo {
@@ -79,7 +119,7 @@ body{
 }
 
 .videoList{
-    background: rgb(228, 228, 228);
+    background: var(--light-grey);
     width: 330px;
     height: 470px;
     padding: 20px;
@@ -91,12 +131,12 @@ body{
     position: relative;
 }
 .videoList h3{
-    background: rgb(228, 228, 228);
+    background: var(--light-grey);
     /* background: blue; */
     position: fixed;
     z-index: 5;
     height: 50px;
-    top: 10rem;
+    top: 12rem;
     width: 280px;
     display: flex;
     align-items: center;
@@ -116,7 +156,7 @@ body{
 
 .list p{
     display: block;
-    background: lightgrey;
+    background: var(--light-grey-hover);
     padding: 8px 15px;
     border-radius: 8px;
     transition: .2s;
@@ -124,7 +164,7 @@ body{
 }
 
 .list p:hover{
-    background: whitesmoke;
+    background: var(--white-bg);
     scale: 1.05;
     color: black;
     cursor: pointer;
